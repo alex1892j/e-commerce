@@ -1,0 +1,185 @@
+@use'_comoms' as c;
+
+@media (max-width: 1080px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .nav {
+        padding: 15px 20px;
+    }
+
+    .home-tex {
+        font-size: 0.4rem;
+        padding-bottom: 450px;
+
+        .home-tex a {
+            font-size: 1rem;
+
+        }
+    }
+
+
+
+    section {
+        padding: 3rem 0 1rem;
+    }
+
+    .home-tex {
+        padding-left: 2rem;
+
+        h1 {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .search-box input {
+        padding: 15px;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    #menuIcon {
+        display: initial;
+    }
+
+    .navard {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: c.$bg-color ;
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
+        clip-path: circle(0% at 0% 0%);
+        transition: 0.6s;
+
+        a {
+            display: block;
+            padding: 15px;
+
+            &:hover {
+                border-bottom: none;
+                background: c.$main-color ;
+                color: c.$bg-color ;
+            }
+        }
+
+        .active {
+            border-bottom: none;
+            background: c.$main-color ;
+            color: c.$bg-color ;
+        }
+    }
+
+    .navard.active {
+        clip-path: circle(144% at 0% 0%);
+    }
+
+    .blog-container.box {
+        padding: 4px;
+    }
+
+}
+
+@media (max-width: 727px) {
+
+
+    .heading span {
+        font-size: 0.9rem;
+    }
+
+    .heading h2 {
+        font-size: 1.4rem;
+    }
+
+    .acerca-de {
+        flex-direction: column-reverse;
+    }
+
+    .acercaDe-tex {
+        text-align: center;
+
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .home-tex a {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 607px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-tex a {
+        font-size: 1rem;
+
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    .search-box input {
+        padding: 11px;
+    }
+
+    .home {
+        min-height: 500px;
+    }
+
+    .home-tex h1 {
+        font-size: 2rem;
+    }
+
+    .home-tex p br {
+        display: contents;
+    }
+}
+
+@media (max-width: 300px) {
+    .home-tex {
+        font-size: 0.4rem;
+        padding-bottom: 450px;
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        a {
+            font-size: 0.9rem;
+
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contenedor {
+        display: block;
+    }
+
+    .contenedor-items {
+        width: 100% !important;
+    }
+
+
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina e-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="recursos/estilos/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+
+
+        <div class="nav container">
+
+            <i class='bx bx-menu' id="menuIcon"></i>
+
+            <a href="#" class="logo">tienda<span>Online</span></a>
+
+            <ul class="navard">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="#productos">productos</a></li>
+
+
+            </ul>
+
+            <i class='bx bx-search' id="searchIcon"></i>
+
+            <div class="search-box container">
+
+                <input type="text" name="buscar" id="buscar" placeholder="search here...">
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <ul id="listprod">
+        <li> <a href="#correas"><i class='bx bx-search'></i>Correas</a></li>
+        <li> <a href="#juguetes"><i class='bx bx-search'></i>Juguetes</a></li>
+        <li> <a href="#ropa"><i class='bx bx-search'></i>Ropa</a></li>
+        <li> <a href="#comida"><i class='bx bx-search'></i>Comida</a></li>
+
+    </ul>
+
+    <div id="coverContSearc">
+
+    </div>
+
+
+
+    <section class="ofertas " id="ofertas">
+        <div class="heading">
+            <span>juguetes</span>
+            <h2>siempre con calida y exelencia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sequi eius sed iste
+                ducimus amet
+                eveniet sunt? Error, magnam corporis!</p>
+        </div>
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Box Engasse</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">English Horse</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$25.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Knock Nap</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$35.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">La Night</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Silver All</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Skin Glam</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Midimix</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$54.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Sir Blue</span>
+                    <img src="recursos/imagen/oferta.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                    <i class='bx bxs-star'>(6 Reviews)</i>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                    <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="productos" id="productos">
+        <div class="heading">
+            <span>todos los produntos</span>
+            <h2>todo para concentirlos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, temporibus!</p>
+        </div>
+
+        <div class="produc-container container">
+
+            <div id="correas" class="box">
+                <img src="recursos/imagen/ejemplo.png" alt="">
+                <h2> <a href="correas.html">correas</a> </h2>
+            </div>
+            <div id="juguetes" class="box">
+                <img src="recursos/imagen/ejemplo.png" alt="">
+                <h2> <a href="juguetes.html">juguetes</a> </h2>
+            </div>
+            <div id="ropa" class="box">
+                <img src="recursos/imagen/ejemplo.png" alt="">
+                <h2><a href="ropa.html">ropa</a></h2>
+            </div>
+            <div id="comida" class="box">
+                <img src="recursos/imagen/ejemplo.png" alt="">
+                <h2> <a href="comida.html">comida</a></h2>
+            </div>
+            <div id="camas" class="box">
+                <img src="recursos/imagen/ejemplo.png" alt="">
+                <h2> <a href="camasyjaulas.html">camas y jaulas</a> </h2>
+            </div>
+            <div id="medicinas" class="box">
+                <img src="recursos/imagen/ejemplo.png" alt="">
+                <h2> <a href="medicina.html">medicinas</a> </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">tienda<span>Online</span></a>
+                <div class="social">
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>paginas</h3>
+                <a href="#">home</a>
+                <a href="#">productos</a>
+                <a href="#">ofertas</a>
+                <a href="#">ventas</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>legal</h3>
+                <a href="#">privacida</a>
+                <a href="#">politica de reembolso</a>
+                <a href="#">cookie policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>contacto</h3>
+                <p>united states</p>
+                <p>japan</p>
+                <p>germary</p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="recursos/javascript/scrip.js"></script>
+    <script src="recursos/javascript/filterSearh.js"></script>
+</body>
+
+</html>

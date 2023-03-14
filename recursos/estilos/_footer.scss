@@ -1,0 +1,55 @@
+@use'_comoms' as c;
+
+.footer {
+    background: c.$text-color;
+    color: #f6f6f6;
+    border-top: 2px solid c.$main-color;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .logo {
+        color: c.$bg-color;
+        margin-bottom: 1rem;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    a {
+        font-size: 24px;
+        color: c.$bg-color;
+        margin: 1rem;
+
+        &:hover {
+            color: c.$main-color ;
+        }
+    }
+}
+
+.footer-box {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+
+    a,
+    p {
+        color: #818181;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: c.$main-color ;
+        }
+    }
+}

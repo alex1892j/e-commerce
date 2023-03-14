@@ -1,0 +1,30 @@
+@use'_comoms' as c;
+
+.acerca-de {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.acercaDe-img {
+    flex: 1 1 21rem;
+}
+
+.acercaDe-tex {
+    flex: 1 1 21rem;
+
+    span {
+        font-weight: 500;
+        color: c.$main-color;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.938rem;
+        margin: 0.5rem 0 1.4rem;
+    }
+}
